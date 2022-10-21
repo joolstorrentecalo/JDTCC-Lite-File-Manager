@@ -84,8 +84,6 @@ class MimeTypesActivity : SimpleActivity(), ItemOperationsListener {
             findItem(R.id.toggle_filename).isVisible = currentViewType == VIEW_TYPE_GRID
             findItem(R.id.go_home).isVisible = false
             findItem(R.id.set_as_home).isVisible = false
-            findItem(R.id.settings).isVisible = false
-            findItem(R.id.about).isVisible = false
 
             findItem(R.id.temporarily_show_hidden).isVisible = !config.shouldShowHidden
             findItem(R.id.stop_showing_hidden).isVisible = config.temporarilyShowHidden

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple File Manager</string>
+    <string name="app_name">File Manager</string>
     <string name="app_launcher_name">File Manager</string>
     <string name="press_back_again">Press back again to exit</string>
     <string name="go_to_home_folder">Go to home folder</string>
@@ -16,7 +16,6 @@
     <string name="pdf_viewer">PDF Viewer</string>
     <string name="invert_colors">Invert colors</string>
 
-    <!-- Open as -->
     <string name="open_as">Open as</string>
     <string name="text_file">Text file</string>
     <string name="image_file">Image file</string>
@@ -24,9 +23,7 @@
     <string name="video_file">Video file</string>
     <string name="other_file">Other file</string>
 
-    <!-- Compression -->
     <string name="compress">Compress</string>
-    <string name="compress_pro">Compress (Pro)</string>
     <string name="decompress">Decompress</string>
     <string name="compress_as">Compress as</string>
     <string name="compressing">Compressing…</string>
@@ -36,15 +33,12 @@
     <string name="compressing_failed">Compressing failed</string>
     <string name="decompressing_failed">Decompressing failed</string>
 
-    <!-- Favorites -->
     <string name="manage_favorites">Manage favorites</string>
     <string name="go_to_favorite">Go to favorite</string>
     <string name="favorites_activity_placeholder">You can add frequently used folders to favorites for easy access from anywhere.</string>
 
-    <!-- File Editor -->
     <string name="file_editor">File Editor</string>
 
-    <!-- Storage analysis -->
     <string name="storage_analysis">Storage analysis</string>
     <string name="images">Images</string>
     <string name="videos">Videos</string>
@@ -56,11 +50,6 @@
     <string name="storage_free">free</string>
     <string name="total_storage">Total storage: %s</string>
 
-    <!-- Settings -->
     <string name="enable_root_access">Enable root access</string>
     <string name="press_back_twice">Require pressing Back twice to leave the app</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>

@@ -12,11 +12,11 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.simplemobiletools.filemanager.pro"
-        minSdkVersion 21
+        applicationId "com.jtcstudios.filemanager"
+        minSdkVersion 29
         targetSdkVersion 33
-        versionCode 127
-        versionName "6.14.2"
+        versionCode 1
+        versionName "1.0.0"
         multiDexEnabled true
         setProperty("archivesBaseName", "file-manager")
         vectorDrawables.useSupportLibrary = true

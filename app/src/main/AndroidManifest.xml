@@ -60,11 +60,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="resource/folder" />
-            </intent-filter>
+
         </activity>
 
         <activity
@@ -85,11 +81,7 @@
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
 
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="text/*" />
-            </intent-filter>
+
         </activity>
 
         <activity
@@ -99,22 +91,14 @@
             android:label="@string/pdf_viewer"
             android:theme="@style/TranslucentTheme">
 
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="application/pdf" />
-            </intent-filter>
+
         </activity>
 
         <activity
             android:name=".activities.DecompressActivity"
             android:exported="true"
             android:label="@string/decompress">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <data android:mimeType="application/zip" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+
         </activity>
 
         <activity
@@ -129,17 +113,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".activities.SettingsActivity"
-            android:exported="true"
-            android:label="@string/settings"
-            android:parentActivityName=".activities.MainActivity">
 
-            <intent-filter>
-                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
 
         <activity
             android:name=".activities.FavoritesActivity"
@@ -147,17 +121,6 @@
             android:label="@string/favorites"
             android:parentActivityName=".activities.MainActivity" />
 
-        <activity
-            android:name="com.simplemobiletools.commons.activities.AboutActivity"
-            android:exported="false"
-            android:label="@string/about"
-            android:parentActivityName=".activities.MainActivity" />
-
-        <activity
-            android:name="com.simplemobiletools.commons.activities.CustomizationActivity"
-            android:exported="false"
-            android:label="@string/customize_colors"
-            android:parentActivityName=".activities.SettingsActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

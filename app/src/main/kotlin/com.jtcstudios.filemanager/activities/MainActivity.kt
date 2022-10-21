@@ -91,7 +91,6 @@ class MainActivity : SimpleActivity() {
                     initFragments()
                     mIsPasswordProtectionPending = false
                     tryInitFileManager()
-                    checkWhatsNewDialog()
                     checkIfRootAvailable()
                     checkInvalidFavorites()
                 } else {
@@ -192,8 +191,6 @@ class MainActivity : SimpleActivity() {
                 R.id.stop_showing_hidden -> tryToggleTemporarilyShowHidden()
                 R.id.increase_column_count -> increaseColumnCount()
                 R.id.reduce_column_count -> reduceColumnCount()
-                R.id.settings -> launchSettings()
-                R.id.about -> launchAbout()
                 else -> return@setOnMenuItemClickListener false
             }
             return@setOnMenuItemClickListener true
@@ -613,12 +610,6 @@ class MainActivity : SimpleActivity() {
         }
     }
 
-    private fun launchSettings() {
-        hideKeyboard()
-        closeSearch()
-        startActivity(Intent(applicationContext, SettingsActivity::class.java))
-    }
-
     private fun launchAbout() {
         closeSearch()
         val licenses = LICENSE_GLIDE or LICENSE_PATTERN or LICENSE_REPRINT or LICENSE_GESTURE_VIEWS or LICENSE_PDF_VIEWER or LICENSE_AUTOFITTEXTVIEW
@@ -751,18 +742,4 @@ class MainActivity : SimpleActivity() {
 
     private fun getTabsList() = arrayListOf(TAB_FILES, TAB_RECENT_FILES, TAB_STORAGE_ANALYSIS)
 
-    private fun checkWhatsNewDialog() {
-        arrayListOf<Release>().apply {
-            add(Release(26, R.string.release_26))
-            add(Release(28, R.string.release_28))
-            add(Release(29, R.string.release_29))
-            add(Release(34, R.string.release_34))
-            add(Release(35, R.string.release_35))
-            add(Release(37, R.string.release_37))
-            add(Release(71, R.string.release_71))
-            add(Release(75, R.string.release_75))
-            add(Release(96, R.string.release_96))
-            checkWhatsNew(this, BuildConfig.VERSION_CODE)
-        }
-    }
 }
