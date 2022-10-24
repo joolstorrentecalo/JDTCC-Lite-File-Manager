@@ -65,7 +65,7 @@ android {
 
 dependencies {
     dependencies {
-        implementation 'com.github.JTCJTCC:JT-Framework:84fc4f0ede'
+        implementation 'com.github.JTCJTCC:JT-Framework:225b8254fe'
     }
     implementation 'com.github.tibbi:AndroidPdfViewer:da57ff410e'
     implementation 'com.github.Stericson:RootTools:df729dcb13'
